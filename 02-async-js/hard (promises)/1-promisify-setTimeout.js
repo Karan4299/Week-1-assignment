@@ -3,4 +3,7 @@
 */
 
 function wait(n) {
+    return new Promise((res, rej) => {
+        setTimeout(() => console.log("resolved"), n)
+    })
 }

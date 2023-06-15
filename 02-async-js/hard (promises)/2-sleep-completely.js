@@ -4,5 +4,16 @@
  */
 
 function sleep (seconds) {
+    
+    let currentTime = new Date().getTime();
+    let updatedTIme = new Date(currentTime + 10000);
+    console.log("yes");
 
+    while (true) {
+        if (new Date().getTime() > updatedTIme) break;
+    }
+
+    console.log("yes");
 }
+
+sleep(10);
